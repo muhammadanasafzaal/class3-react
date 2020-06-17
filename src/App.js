@@ -1,25 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Dinner from './dinner.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div>
+    <h1>Hello Anas</h1>
+    <Dinner dishName="Pizza" sweet="Custard"></Dinner>
+    <Dinner dishName="Biryani" sweet="Kheer"></Dinner>
+    <Dinner dishName="Burger" sweet="Icecream"></Dinner>
+  </div>    
   );
 }
 
